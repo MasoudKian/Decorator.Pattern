@@ -28,17 +28,13 @@ Decorator.Pattern_01/
 │
 └── Program.cs (example usage)
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 🚀 How to Run
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/<your-repo-name>.git
+   git clone https://github.com/MasoudKian/Decorator.Pattern.git
 Open the solution in Visual Studio or any C# IDE.
 
 Build and run the project.
@@ -48,9 +44,6 @@ Check the console output.
 ✨ Example Output
 When you run the project, you will see something like this:
 
-arduino
-Copy
-Edit
 ConcreteComponent Operation is run...
 ----------------------------------------------------
 ConcreteComponent Operation is run...
@@ -71,8 +64,7 @@ Extends the behavior of Component by adding new operations before/after delegati
 
 📖 Code Highlight
 csharp
-Copy
-Edit
+
 ConcreteComponent concreteComponent = new ConcreteComponent();
 concreteComponent.Operation();
 
@@ -81,6 +73,7 @@ Console.WriteLine("----------------------------------------------------");
 ConcreteComponent concreteComponent2 = new ConcreteComponent();
 ConcreteDecorator concreteDecorator = new ConcreteDecorator(concreteComponent2);
 concreteDecorator.Operation();
+
 ✅ Why Use This Pattern?
 ✔️ Open/Closed Principle: You can extend behavior without modifying existing code.
 ✔️ Flexibility: Combine multiple decorators dynamically.
@@ -88,16 +81,8 @@ concreteDecorator.Operation();
 
 💡 Notes
 In this example, _component in Decorator is declared as private readonly for immutability.
-
 You can change it to protected if you want child classes to have direct access and be able to modify it.
 
-📌 License
-This project is open source and available under the MIT License.
-
 Made with ❤️ for learning Design Patterns
-
-yaml
-Copy
-Edit
 
 ---
